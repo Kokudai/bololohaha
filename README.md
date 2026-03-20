@@ -1,9 +1,26 @@
-<h1 align="center">🚀 Projeto Par/Ímpar + Tabuada + Quiz</h1>
+<svg width="1000" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#101820;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 
-<p align="center">
-  https://img.shields.io/badge/C%23-.NET%206.0-blue?style=for-the-badge&logo=csharp
-</p>
+  <!-- Background -->
+  <rect width="1000" height="260" rx="20" fill="url(#grad)" />
 
-<p align="center">
-  Aplicação em C# com foco em lógica, validação de dados e interação com o usuário.  
-</p>
+  <!-- Frame -->
+  <rect x="12" y="12" width="976" height="236" rx="18"
+        fill="none" stroke="#4f4f4f" stroke-width="3" opacity="0.7" />
+
+  <!-- Title -->
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle"
+        font-size="40" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif"
+        font-weight="700" letter-spacing="1">
+        PROJETO PAR/ÍMPAR · TABUADA · QUIZ
+  </text>
+
+  <!-- Subtitle -->
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle"
+        font-size="24" fill="#cfcfcf" font-family="Segoe UI, Arial, sans-serif">
+        Desenvolvido por Henzo Kokudai
