@@ -17,10 +17,10 @@
   <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle"
         font-size="40" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif"
         font-weight="700" letter-spacing="1">
-        PROJETO PAR/ÍMPAR · TABUADA · QUIZ
+       🚀 PROJETO PAR/ÍMPAR · TABUADA · QUIZ 🚀
   </text>
 
   <!-- Subtitle -->
   <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle"
         font-size="24" fill="#cfcfcf" font-family="Segoe UI, Arial, sans-serif">
-        Desenvolvido por Henzo Kokudai
+        Desenvolvido por Henzo Kokudai da Silva
