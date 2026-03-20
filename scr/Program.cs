@@ -47,7 +47,7 @@ public class Program
 			{
 				Console.WriteLine(A + " x " + i + " = " + resultado + " É impar");
 			}
-		}
+		    }
 
  
 		Console.WriteLine("");
@@ -56,6 +56,7 @@ public class Program
 		Console.WriteLine($"{A} é um número grande?");
 		Console.WriteLine("");
 		bool grande = (A > 20);
+		
 			if (grande)
 			{
 				Console.WriteLine("É grande já, lá ele!");
@@ -63,18 +64,19 @@ public class Program
 			else
 			{
 			 	Console.WriteLine("Ainda não, tá de boa");
-
-		       	}
+		    }
+		
 		Console.WriteLine("");
 		Console.WriteLine("Agora vamos verificar se você manja mesmo de par e impar, digite um novo número abaixo:");
-			int num;
-		    string entradaB = Console.ReadLine();
+		int num;
+	    string entradaB = Console.ReadLine();
 		while (!int.TryParse(entradaB, out num))
 		{
 			Console.WriteLine();
 			Console.WriteLine("Entrada invalida, digite apenas números:");
 			entradaB = Console.ReadLine();
 		}
+		
 		Console.WriteLine();
 		Console.WriteLine("Agora dígite se ele é par ou ímpar:");
 		string resposta = Console.ReadLine().ToLower();
@@ -88,12 +90,15 @@ public class Program
 				resposta = Console.ReadLine().ToLower();
 			   Console.WriteLine();
 			}
+		
 		bool ehpar = (num % 2 == 0);
+		
 		if (ehpar && resposta == "par")
 		{
 			Console.WriteLine();
 			Console.WriteLine("Isso ai mano, certinho! Qual o nome do gênio?");
-			string nome = Console.ReadLine();	
+			string nome = Console.ReadLine();
+			
 			while (string.IsNullOrWhiteSpace(nome) || nome.Any(c => char.IsDigit(c)))
 			{
 				Console.WriteLine();
@@ -120,8 +125,10 @@ public class Program
 		Console.WriteLine("Agora, me fale a sua idade e a sua altura:");
 		Console.WriteLine("");
 		Console.WriteLine("idade:");
+		
 		int idade;
 		string entradaE = Console.ReadLine();
+		
 		while (!int.TryParse(entradaE, out idade))
 			   {
 			       Console.WriteLine();
@@ -141,7 +148,7 @@ public class Program
 			Console.WriteLine();
 			Console.WriteLine("Entrada inválida, digite uma altura válida(ex: 1.75)");
 			entradaE = Console.ReadLine();
-		}
+	      }
 		  }		
 			if (idade >= 18)
 		{
@@ -157,7 +164,8 @@ public class Program
 
 		Console.WriteLine("");
 		Console.WriteLine("Altura:");
-		double altura;
+		
+		double altura; 
 		string entradaD = Console.ReadLine();
 		
 		while (!double.TryParse(entradaD, NumberStyles.Any,CultureInfo.InvariantCulture, out altura))
@@ -172,6 +180,7 @@ public class Program
 			Console.WriteLine();
 			Console.WriteLine("Fala a verdade em kkkkkkkkkk, vc não é um poste não");
 			Console.WriteLine();
+			
 			entradaD = Console.ReadLine();
 			
 			
@@ -205,9 +214,11 @@ public class Program
 		Console.WriteLine("Qual o número da camisa ultilizada pelo jogador Cristiano Ronaldo?");
 		Console.WriteLine();
 		Console.WriteLine("Sua resposta:");
+		
 		int respostaquestUM;
 		string entradaF = Console.ReadLine();
 		int okquest1 = 0;
+		
 		while (!int.TryParse(entradaF, out respostaquestUM))
 			   {
 				   Console.WriteLine("Entrada inválida, responda somente com números:");
@@ -242,7 +253,9 @@ public class Program
 		Console.WriteLine();
 
 		Console.WriteLine("Sua resposta:");
+		
 		string respostaquestDOIS = Console.ReadLine();
+		
 		while (string.IsNullOrWhiteSpace(respostaquestDOIS) || respostaquestDOIS.Any(c => char.IsDigit(c)))
 			   {
 		          Console.WriteLine();
@@ -281,7 +294,9 @@ public class Program
 		Console.WriteLine("d) Vanuatu");
 		Console.WriteLine();
 		Console.WriteLine("Sua resposta:");
+		
 		string respostaquestTRES = Console.ReadLine();
+		
 		while (string.IsNullOrWhiteSpace(respostaquestTRES) || respostaquestTRES.Any(c => char.IsDigit(c)) || (respostaquestTRES != "a" && respostaquestTRES != "b" && respostaquestTRES != "c" && respostaquestTRES != "d"))
 		{
 			Console.WriteLine();
@@ -313,8 +328,10 @@ public class Program
 		Console.WriteLine("Qual o ano de fabricação da primeira cg 125?");
 		Console.WriteLine();
 		Console.WriteLine("Sua resposta:");
+		
 		int respostaquestQUATRO;
 		string entradaC = Console.ReadLine();
+		
 		while (!int.TryParse(entradaC, out respostaquestQUATRO))
 		{
 			Console.WriteLine("Entrada invalida, digite apenas números:");
@@ -375,7 +392,9 @@ public class Program
 		Console.WriteLine("e) 2017");
 		Console.WriteLine();
 		Console.WriteLine("Sua resposta:");
+		
 		string respostaquestSEIS = Console.ReadLine();
+		
 		if (respostaquestSEIS == "2017")
 		{
 			Console.WriteLine();
@@ -398,6 +417,7 @@ public class Program
 		int nota = okquest1;
 		double mediaprova = ((double)okquest1 / totalQuest) *10;
 		double porcentagem = ((double)okquest1 / totalQuest) *100;
+		
 		Console.WriteLine("=== RESULTADO FINAL DA PROVA ===");
 		Console.WriteLine();
 		Console.WriteLine($"Acertos: {okquest1} de {totalQuest}");
@@ -405,6 +425,7 @@ public class Program
 		Console.WriteLine($"Nota final: {mediaprova:F1} /10");
 		Console.WriteLine();
 		Console.WriteLine($"Porcentagem: {porcentagem:F0}%");
+		
 		if (mediaprova >= 7)
 		{
 			Console.WriteLine();
