@@ -3,7 +3,6 @@
 <p align="center">
   https://img.shields.io/badge/C%23-.NET%206.0-blue?style=for-the-badge&logo=csharp
   <img src="https://img.shields.io/badge/Status-Ativo-brightgreen?style=dge
-  https://img.shields.io/badge/Autor-Henzo%20Kokudai-red?style=for-the-badge
 </p>
 
 <p align="center">
